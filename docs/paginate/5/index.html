@@ -4,13 +4,13 @@
         <title>Cute Pet Photos</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles/tailwind.css">
+        <link rel="stylesheet" href="/cpsc349-project2-tailwind/styles/tailwind.css">
     </head>
 
     <body>
         <div class="flex flex-row-reverse justify-center items-center bg-green-300">
             <div><b class="text-base text-4xl text-black">Cute Pet Photos</b></div>
-            <div class="px-10 py-8"><img src ="/logo.jpeg" alt="Cute Pet Photos"></div>
+            <div class="px-10 py-8"><img src ="/cpsc349-project2-tailwind/logo.jpeg" alt="Cute Pet Photos"></div>
         </div>
 
         <div class="divide-y-2 divide-black divide-solid">
@@ -20,29 +20,29 @@
         
         <nav>
             <div class="bg-pink-200 py-3 text-lg">
-                <b><a class="hover:text-pink-900 hover:underline text-blue-600 pl-3 pr-8" href="/">🏠Home</a></b>
-                <b><a class="hover:text-pink-900 hover:underline text-blue-600 pr-8" href="/aboutUs">✌️About Us</a></b>
-                <b><a class="hover:text-pink-900 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">📝Contact</a></b>
+                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600 pl-3 pr-8" href="/cpsc349-project2-tailwind/">🏠Home</a></b>
+                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600 pr-8" href="/cpsc349-project2-tailwind/aboutUs">✌️About Us</a></b>
+                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">📝Contact</a></b>
             </div>
             
             <div class="divide-y-2 divide-black divide-solid">
                 <div></div>
                 <div></div>
             </div>
-            <ul>
-                <div class="flex justify-center text-center items-center space-x-4 py-5">
-                <div class="grid grid-cols-1 md:grid-cols-10 lg:grid-cols-10">
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate">1-10</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/1">11-20</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/2">21-30</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/3">31-40</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/4">41-50</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/5">51-60</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/6">61-70</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/7">71-80</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/8">81-90</a></button>
-                <button class="visited:text-purple-600 border border-black bg-gray-300 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/paginate/9">91-100</a></button>
-                </div>
+            <ul class="p-6">
+                <div class="flex justify-around">
+                    <div class="md:flex-grow grid grid-cols-1 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10 gap-x-8">
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate">1-10</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/1">11-20</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/2">21-30</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/3">31-40</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/4">41-50</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/5">51-60</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/6">61-70</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/7">71-80</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/8">81-90</a></button>
+                        <button class="border border-black bg-gray-300 visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600 font-bold py-2 px-4 rounded-2xl"><a href ="/cpsc349-project2-tailwind/paginate/9">91-100</a></button>
+                    </div>
                 </div>
             </ul>     
         </nav>
@@ -50,98 +50,97 @@
         <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
-<link rel="stylesheet" href="/styles/tailwind.css">
+<link rel="stylesheet" href="/cpsc349-project2-tailwind/styles/tailwind.css">
 
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/B8krQ458J44">A cat photo by Nicolas Gonzalez</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/B8krQ458J44">A cat photo by Nicolas Gonzalez</a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/HbrXSaaya14">A dog photo by FLOUFFY </a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/HbrXSaaya14">A dog photo by FLOUFFY </a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/UKYwI2LAyAM">A dog photo by Paxson Woelber</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/UKYwI2LAyAM">A dog photo by Paxson Woelber</a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/CPvhE5xQ7zE">A dog photo by FLOUFFY </a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/CPvhE5xQ7zE">A dog photo by FLOUFFY </a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/7Za7c7F-2eM">A dog photo by Sharon McCutcheon</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/7Za7c7F-2eM">A dog photo by Sharon McCutcheon</a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/nUpgLnikqkQ">A dog photo by Jess @ Harper Sunday</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/nUpgLnikqkQ">A dog photo by Jess @ Harper Sunday</a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/pu5KYD0Z72I">A cat photo by Cole Keister</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/pu5KYD0Z72I">A cat photo by Cole Keister</a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/gCVk-NOhp6A">A dog photo by Jay Short</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/gCVk-NOhp6A">A dog photo by Jay Short</a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/sFlzy_sco64">A dog photo by Elias Ehmann</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/sFlzy_sco64">A dog photo by Elias Ehmann</a>
     </li>
 </ul>
 
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "https://unsplash.com/photos/bCyvmszLmw0">A dog photo by Cole Keister</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/bCyvmszLmw0">A dog photo by Cole Keister</a>
     </li>
 </ul>
 
 </html>
 
 
-        <footer>
+        <footer class="text-xl pt-3">
             <div class="divide-y-2 divide-black divide-solid">
                 <div></div>
                 <div></div>
             </div>
-            <div class="flex justify-center text-center items-center bg-green-300">
+            <div class="flex justify-center text-center items-center bg-green-300 py-3">
                 <div class="grid grid-cols-1">
-                    <p class="font-bold">
+                    <p class="font-bold text-black">
                         CS 349 Project 2<br>
                     </p>
         
-                    <p>
-                        Photo Credit:
-                        <a class="hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    <p class="text-black">Photo Credit:
+                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                         Unsplash.com 
                         </a><br>
                     </p>
         
                     <p>
-                        <a class="hover:text-pink-400 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">
+                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">
                         Github Link
                         </a><br>
                     </p>
         
                     <p>
-                        <a class="hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/license">
+                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/license">
                         Copyright Policy
                         </a>
                     </p>
