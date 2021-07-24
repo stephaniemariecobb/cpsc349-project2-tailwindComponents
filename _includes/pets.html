@@ -1,0 +1,83 @@
+---
+layout: myheader
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+    </head>
+    <style>
+            :root {
+                --red: {{red}};
+                --green: {{green}};
+                --blue: {{blue}};
+            
+                --accessible-color: calc(
+                    (
+                        (
+                            (
+                                (var(--red) * 299) +
+                                (var(--green) * 587) +
+                                (var(--blue) * 114)
+                            ) / 1000
+                        ) - 128
+                    ) * -1000
+                );
+            }
+
+        body {
+            color: 
+                rgb(
+                    var(--accessible-color),
+                    var(--accessible-color),
+                    var(--accessible-color)
+                );
+            background-color:
+                rgb(
+                    var(--red),
+                    var(--green),
+                    var(--blue)
+                );
+            }
+    </style>
+    <body>
+
+        {{content}}
+
+        {% unless page.url == '/' %}
+        <div class="description">
+            <b><u>Photograph Information</u></b><br>
+            A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
+            <a href = "{{photo_url}}">{{photo_url}}</a><br>
+            {% unless photo_location_name == "" %}
+                Photo taken at {{photo_location_name}}.<br>
+            {% endunless %}
+            {% unless photo_submitted_at == "" %}
+                Date of Creation: {{photo_submitted_at}}<br>
+            {% endunless %}
+            {% unless exif_camera_model == "" %}
+                Camera Model: {{exif_camera_model}}
+            {% endunless %}
+        </div>
+        {% endunless %}
+
+        {% if page.url == '/' %}
+        <ol class="flex justify-center text-center items-center">
+        <ol class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-400">
+            {% for photo in collections.photos %}
+                <li class="pagItem">
+                    <img src="{{photo_image_url}}">
+                    <a href="{{ photo.url | url }}">
+                        A {{ photo.data.photo_keyword }} photo
+                        by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ol>
+    </ol>
+        {% endif %}
+
+    </body>
+</html>
