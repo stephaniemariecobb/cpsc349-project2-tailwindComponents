@@ -51,7 +51,7 @@ layout: myheader
         <div class="box-content h-40 w-64 p-8 border-4">
             <b><u>Photograph Information</u></b><br>
             A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
-            <a class="hover:text-pink-400 hover:underline text-blue-700" href = "{{photo_url}}">{{photo_url}}</a><br>
+            <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-700" href = "{{photo_url}}">{{photo_url}}</a><br>
             {% unless photo_location_name == "" %}
                 Photo taken at {{photo_location_name}}.<br>
             {% endunless %}
@@ -69,7 +69,7 @@ layout: myheader
         <ol class="flex justify-center text-center items-center">
             <ol class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
                 {% for photo in collections.photos %}
-                    <li class="hover:text-pink-400 hover:underline text-blue-600">
+                    <li class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600">
                         <img src="{{photo_image_url}}">
                         <a href="{{ photo.url | url }}">
                             A {{ photo.data.photo_keyword }} photo
