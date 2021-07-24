@@ -12,7 +12,7 @@ pagination:
 <link rel="stylesheet" href="{{ '/cpsc349-project2-tailwind/styles/tailwind.css' | url }}">
 
 {% for photo in photos %}
-<ul class="flex justify-center text-center items-center">
+<ul class="flex justify-center text-center items-center p-6">
     <li class="grid grid-cols-1">
         <a class="hover:text-pink-400 hover:underline text-blue-600" href = "{{photo.data.photo_url}}">A {{photo.data.photo_keyword}} photo by {{photo.data.photographer_first_name}} {{photo.data.photographer_last_name}}</a>
     </li>
