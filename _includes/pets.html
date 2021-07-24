@@ -9,23 +9,23 @@ layout: myheader
         <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
     </head>
     <style>
-            :root {
-                --red: {{red}};
-                --green: {{green}};
-                --blue: {{blue}};
+        :root {
+            --red: {{red}};
+            --green: {{green}};
+            --blue: {{blue}};
             
-                --accessible-color: calc(
+            --accessible-color: calc(
+                (
                     (
                         (
-                            (
-                                (var(--red) * 299) +
-                                (var(--green) * 587) +
-                                (var(--blue) * 114)
-                            ) / 1000
-                        ) - 128
-                    ) * -1000
-                );
-            }
+                            (var(--red) * 299) +
+                            (var(--green) * 587) +
+                            (var(--blue) * 114)
+                        ) / 1000
+                    ) - 128
+                ) * -1000
+            );
+        }
 
         body {
             color: 
@@ -65,18 +65,18 @@ layout: myheader
 
         {% if page.url == '/' %}
         <ol class="flex justify-center text-center items-center">
-        <ol class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-400">
-            {% for photo in collections.photos %}
-                <li class="pagItem">
-                    <img src="{{photo_image_url}}">
-                    <a href="{{ photo.url | url }}">
-                        A {{ photo.data.photo_keyword }} photo
-                        by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
-                    </a>
-                </li>
-            {% endfor %}
+            <ol class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+                {% for photo in collections.photos %}
+                    <li class="hover:text-pink-400 hover:underline text-blue-600">
+                        <img src="{{photo_image_url}}">
+                        <a href="{{ photo.url | url }}">
+                            A {{ photo.data.photo_keyword }} photo
+                            by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ol>
         </ol>
-    </ol>
         {% endif %}
 
     </body>
