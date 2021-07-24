@@ -47,10 +47,11 @@ layout: myheader
         {{content}}
 
         {% unless page.url == '/' %}
-        <div class="description">
+        <div class="flex justify-center items-center p-8">
+        <div class="box-content h-40 w-64 p-8 border-4">
             <b><u>Photograph Information</u></b><br>
             A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
-            <a href = "{{photo_url}}">{{photo_url}}</a><br>
+            <a class="hover:text-pink-400 hover:underline text-blue-700" href = "{{photo_url}}">{{photo_url}}</a><br>
             {% unless photo_location_name == "" %}
                 Photo taken at {{photo_location_name}}.<br>
             {% endunless %}
@@ -60,6 +61,7 @@ layout: myheader
             {% unless exif_camera_model == "" %}
                 Camera Model: {{exif_camera_model}}
             {% endunless %}
+        </div>
         </div>
         {% endunless %}
 

@@ -12,9 +12,9 @@ pagination:
 <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
 
 {% for photo in photos %}
-<ul class="pag">
-    <li class="pagItem">
-        <a href = "{{photo.data.photo_url}}">A {{photo.data.photo_keyword}} photo by {{photo.data.photographer_first_name}} {{photo.data.photographer_last_name}}</a>
+<ul class="flex justify-center text-center items-center">
+    <li class="grid grid-cols-1">
+        <a class="hover:text-pink-400 hover:underline text-blue-600" href = "{{photo.data.photo_url}}">A {{photo.data.photo_keyword}} photo by {{photo.data.photographer_first_name}} {{photo.data.photographer_last_name}}</a>
     </li>
 </ul>
 {% endfor %}
