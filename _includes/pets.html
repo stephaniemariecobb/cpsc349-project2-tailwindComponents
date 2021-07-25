@@ -6,7 +6,7 @@ layout: myheader
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+        <link rel="stylesheet" href="{{ '/cpsc349-project2-tailwind/styles/tailwind.css' | url }}">
     </head>
     <style>
         :root {
@@ -72,7 +72,7 @@ layout: myheader
                 {% for photo in collections.photos %}
                     <li>
                         <img src="{{photo_image_url}}">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="{{ photo.url | url }}">
+                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind{{ photo.url | url }}">
                             A {{ photo.data.photo_keyword }} photo
                             by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
                         </a>
