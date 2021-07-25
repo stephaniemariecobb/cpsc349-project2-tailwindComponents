@@ -51,7 +51,7 @@ layout: myheader
         <div class="box-border h-1/4 w-1/2 border-2 p-5 ring-2 ring-black">
             <b><u>Photograph Information</u></b><br>
             A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
-            <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-700" href = "{{photo_url}}">{{photo_url}}</a><br>
+            <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href = "{{photo_url}}">{{photo_url}}</a><br>
             {% unless photo_location_name == "" %}
                 Photo taken at {{photo_location_name}}.<br>
             {% endunless %}
@@ -70,9 +70,9 @@ layout: myheader
         <ol class="flex justify-around">
             <ol class="flex flex-grow grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 text-center gap-y-5">
                 {% for photo in collections.photos %}
-                    <li class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600">
+                    <li>
                         <img src="{{photo_image_url}}">
-                        <a href="/cpsc349-project2-tailwind{{ photo.url | url }}">
+                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind{{ photo.url | url }}">
                             A {{ photo.data.photo_keyword }} photo
                             by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
                         </a>
