@@ -4,44 +4,44 @@
         <title>Cute Pet Photos</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2-tailwind/styles/tailwind.css">
+        <link rel="stylesheet" href="/tailwind.css">
     </head>
 
     <body>
-        <div class="flex flex-row-reverse justify-center items-center bg-green-300">
-            <div><b class="text-base text-4xl text-black">Cute Pet Photos</b></div>
-            <div class="px-10 py-8"><img src ="/cpsc349-project2-tailwind/logo.jpeg" alt="Cute Pet Photos"></div>
+        <div class="custom-logo">
+            <div><b class="pet-logo">Cute Pet Photos</b></div>
+            <div class="px-10 py-8"><img src ="/logo.jpeg" alt="Cute Pet Photos"></div>
         </div>
 
-        <div class="divide-y-2 divide-black divide-solid">
+        <div class="black-divider">
             <div></div>
             <div></div>
         </div>
         
         <nav>
-            <div class="bg-pink-200 py-3 text-lg">
-                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600 pl-3 pr-8" href="/cpsc349-project2-tailwind/">🏠Home</a></b>
-                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600 pr-8" href="/cpsc349-project2-tailwind/aboutUs">✌️About Us</a></b>
-                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">📝Contact</a></b>
+            <div class="custom-header">
+                <b><a class="blue-link1 pl-3 pr-8" href="/">🏠Home</a></b>
+                <b><a class="blue-link1 pr-8" href="/aboutUs">✌️About Us</a></b>
+                <b><a class="blue-link1" href="https://github.com/ryan-broguiere/cpsc349-project2">📝Contact</a></b>
             </div>
             
-            <div class="divide-y-2 divide-black divide-solid">
+            <div class="black-divider">
                 <div></div>
                 <div></div>
             </div>
             <ul class="p-6">
                 <div class="flex justify-around">
-                    <div class="md:flex-grow grid grid-cols-1 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10 gap-x-8 text-xl">
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate">1-10</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/1">11-20</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/2">21-30</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/3">31-40</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/4">41-50</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/5">51-60</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/6">61-70</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/7">71-80</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/8">81-90</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/9">91-100</a></button>
+                    <div class="gap-x-8 text-xl md:flex-grow grid grid-cols-1 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10">
+                        <button class="gray-button"><a class="blue-link" href ="/paginate">1-10</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/1">11-20</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/2">21-30</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/3">31-40</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/4">41-50</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/5">51-60</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/6">61-70</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/7">71-80</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/8">81-90</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/9">91-100</a></button>
                     </div>
                 </div>
             </ul>     
@@ -52,7 +52,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2-tailwind/styles/tailwind.css">
+        <link rel="stylesheet" href="/styles/tailwind.css">
     </head>
     <style>
         :root {
@@ -98,7 +98,7 @@
 
     <div class="pb-10"> 
         Pet photos from
-        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        <a class="blue-link" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
         Unsplash</a>
         </div>
 </html>
@@ -107,11 +107,11 @@
 
         
         <ol class="flex justify-around">
-            <ol class="flex flex-grow grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 text-center gap-y-5">
+            <ol class="flex flex-grow grid grid-cols-1 text-center gap-y-5 md:grid-cols-3 lg:grid-cols-3">
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/000/">
+                        <a class="blue-link" href="/photos/000/">
                             A dog photo
                             by Jared Murray
                         </a>
@@ -119,7 +119,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/001/">
+                        <a class="blue-link" href="/photos/001/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -127,7 +127,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/002/">
+                        <a class="blue-link" href="/photos/002/">
                             A dog photo
                             by Alan Quirvan
                         </a>
@@ -135,7 +135,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/003/">
+                        <a class="blue-link" href="/photos/003/">
                             A dog photo
                             by April Walker
                         </a>
@@ -143,7 +143,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/004/">
+                        <a class="blue-link" href="/photos/004/">
                             A dog photo
                             by LongX Music
                         </a>
@@ -151,7 +151,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/005/">
+                        <a class="blue-link" href="/photos/005/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -159,7 +159,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/006/">
+                        <a class="blue-link" href="/photos/006/">
                             A dog photo
                             by Carissa Weiser
                         </a>
@@ -167,7 +167,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/007/">
+                        <a class="blue-link" href="/photos/007/">
                             A cat photo
                             by Paolo Nicolello
                         </a>
@@ -175,7 +175,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/008/">
+                        <a class="blue-link" href="/photos/008/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -183,7 +183,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/009/">
+                        <a class="blue-link" href="/photos/009/">
                             A cat photo
                             by Andreea Popa
                         </a>
@@ -191,7 +191,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/010/">
+                        <a class="blue-link" href="/photos/010/">
                             A dog photo
                             by Neil Cooper
                         </a>
@@ -199,7 +199,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/011/">
+                        <a class="blue-link" href="/photos/011/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -207,7 +207,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/012/">
+                        <a class="blue-link" href="/photos/012/">
                             A dog photo
                             by Paul Kapischka
                         </a>
@@ -215,7 +215,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/013/">
+                        <a class="blue-link" href="/photos/013/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -223,7 +223,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/014/">
+                        <a class="blue-link" href="/photos/014/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -231,7 +231,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/015/">
+                        <a class="blue-link" href="/photos/015/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -239,7 +239,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/016/">
+                        <a class="blue-link" href="/photos/016/">
                             A dog photo
                             by Jay Wennington
                         </a>
@@ -247,7 +247,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/017/">
+                        <a class="blue-link" href="/photos/017/">
                             A cat photo
                             by Eduardo Mallmann
                         </a>
@@ -255,7 +255,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/018/">
+                        <a class="blue-link" href="/photos/018/">
                             A cat photo
                             by David Peters
                         </a>
@@ -263,7 +263,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/019/">
+                        <a class="blue-link" href="/photos/019/">
                             A cat photo
                             by Allie 
                         </a>
@@ -271,7 +271,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/020/">
+                        <a class="blue-link" href="/photos/020/">
                             A rabbit photo
                             by Sincerely Media 
                         </a>
@@ -279,7 +279,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/021/">
+                        <a class="blue-link" href="/photos/021/">
                             A dog photo
                             by Kseniia Shikhova
                         </a>
@@ -287,7 +287,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/022/">
+                        <a class="blue-link" href="/photos/022/">
                             A cat photo
                             by Slavy Darozhkin
                         </a>
@@ -295,7 +295,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/023/">
+                        <a class="blue-link" href="/photos/023/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -303,7 +303,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/024/">
+                        <a class="blue-link" href="/photos/024/">
                             A dog photo
                             by MARK HESSLING
                         </a>
@@ -311,7 +311,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/025/">
+                        <a class="blue-link" href="/photos/025/">
                             A dog photo
                             by Mark Olsen
                         </a>
@@ -319,7 +319,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/026/">
+                        <a class="blue-link" href="/photos/026/">
                             A dog photo
                             by Clint McKoy
                         </a>
@@ -327,7 +327,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/027/">
+                        <a class="blue-link" href="/photos/027/">
                             A rabbit photo
                             by Sincerely Media 
                         </a>
@@ -335,7 +335,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/028/">
+                        <a class="blue-link" href="/photos/028/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -343,7 +343,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/029/">
+                        <a class="blue-link" href="/photos/029/">
                             A dog photo
                             by Melissa Keizer
                         </a>
@@ -351,7 +351,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/030/">
+                        <a class="blue-link" href="/photos/030/">
                             A dog photo
                             by 99.films 
                         </a>
@@ -359,7 +359,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/031/">
+                        <a class="blue-link" href="/photos/031/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -367,7 +367,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/032/">
+                        <a class="blue-link" href="/photos/032/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -375,7 +375,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/033/">
+                        <a class="blue-link" href="/photos/033/">
                             A dog photo
                             by Heather Mount
                         </a>
@@ -383,7 +383,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/034/">
+                        <a class="blue-link" href="/photos/034/">
                             A dog photo
                             by Chris Arthur-Collins
                         </a>
@@ -391,7 +391,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/035/">
+                        <a class="blue-link" href="/photos/035/">
                             A dog photo
                             by Overture Creations
                         </a>
@@ -399,7 +399,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/036/">
+                        <a class="blue-link" href="/photos/036/">
                             A cat photo
                             by Cassidy James Blaede
                         </a>
@@ -407,7 +407,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/037/">
+                        <a class="blue-link" href="/photos/037/">
                             A rabbit photo
                             by Sincerely Media 
                         </a>
@@ -415,7 +415,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/038/">
+                        <a class="blue-link" href="/photos/038/">
                             A dog photo
                             by Carissa Weiser
                         </a>
@@ -423,7 +423,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/039/">
+                        <a class="blue-link" href="/photos/039/">
                             A cat photo
                             by Clay Banks
                         </a>
@@ -431,7 +431,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/040/">
+                        <a class="blue-link" href="/photos/040/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -439,7 +439,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/041/">
+                        <a class="blue-link" href="/photos/041/">
                             A dog photo
                             by Visit Greenland 
                         </a>
@@ -447,7 +447,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/042/">
+                        <a class="blue-link" href="/photos/042/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -455,7 +455,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/043/">
+                        <a class="blue-link" href="/photos/043/">
                             A dog photo
                             by Melissa Keizer
                         </a>
@@ -463,7 +463,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/044/">
+                        <a class="blue-link" href="/photos/044/">
                             A dog photo
                             by Connor Home
                         </a>
@@ -471,7 +471,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/045/">
+                        <a class="blue-link" href="/photos/045/">
                             A rabbit photo
                             by Sincerely Media 
                         </a>
@@ -479,7 +479,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/046/">
+                        <a class="blue-link" href="/photos/046/">
                             A dog photo
                             by Tuomas Härkönen
                         </a>
@@ -487,7 +487,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/047/">
+                        <a class="blue-link" href="/photos/047/">
                             A dog photo
                             by Angel Luciano
                         </a>
@@ -495,7 +495,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/048/">
+                        <a class="blue-link" href="/photos/048/">
                             A dog photo
                             by __ drz __
                         </a>
@@ -503,7 +503,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/049/">
+                        <a class="blue-link" href="/photos/049/">
                             A cat photo
                             by Marthijn Brinks
                         </a>
@@ -511,7 +511,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/050/">
+                        <a class="blue-link" href="/photos/050/">
                             A cat photo
                             by Nicolas Gonzalez
                         </a>
@@ -519,7 +519,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/051/">
+                        <a class="blue-link" href="/photos/051/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -527,7 +527,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/052/">
+                        <a class="blue-link" href="/photos/052/">
                             A dog photo
                             by Paxson Woelber
                         </a>
@@ -535,7 +535,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/053/">
+                        <a class="blue-link" href="/photos/053/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -543,7 +543,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/054/">
+                        <a class="blue-link" href="/photos/054/">
                             A dog photo
                             by Sharon McCutcheon
                         </a>
@@ -551,7 +551,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/055/">
+                        <a class="blue-link" href="/photos/055/">
                             A dog photo
                             by Jess @ Harper Sunday
                         </a>
@@ -559,7 +559,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/056/">
+                        <a class="blue-link" href="/photos/056/">
                             A cat photo
                             by Cole Keister
                         </a>
@@ -567,7 +567,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/057/">
+                        <a class="blue-link" href="/photos/057/">
                             A dog photo
                             by Jay Short
                         </a>
@@ -575,7 +575,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/058/">
+                        <a class="blue-link" href="/photos/058/">
                             A dog photo
                             by Elias Ehmann
                         </a>
@@ -583,7 +583,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/059/">
+                        <a class="blue-link" href="/photos/059/">
                             A dog photo
                             by Cole Keister
                         </a>
@@ -591,7 +591,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/060/">
+                        <a class="blue-link" href="/photos/060/">
                             A cat photo
                             by Alfons Taekema
                         </a>
@@ -599,7 +599,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/061/">
+                        <a class="blue-link" href="/photos/061/">
                             A dog photo
                             by Sincerely Media 
                         </a>
@@ -607,7 +607,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/062/">
+                        <a class="blue-link" href="/photos/062/">
                             A dog photo
                             by Carissa Weiser
                         </a>
@@ -615,7 +615,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/063/">
+                        <a class="blue-link" href="/photos/063/">
                             A cat photo
                             by René Peters
                         </a>
@@ -623,7 +623,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/064/">
+                        <a class="blue-link" href="/photos/064/">
                             A dog photo
                             by Tobias 
                         </a>
@@ -631,7 +631,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/065/">
+                        <a class="blue-link" href="/photos/065/">
                             A dog photo
                             by Jonatan Pie
                         </a>
@@ -639,7 +639,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/066/">
+                        <a class="blue-link" href="/photos/066/">
                             A dog photo
                             by Álvaro Niño
                         </a>
@@ -647,7 +647,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/067/">
+                        <a class="blue-link" href="/photos/067/">
                             A dog photo
                             by Samantha Ram
                         </a>
@@ -655,7 +655,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/068/">
+                        <a class="blue-link" href="/photos/068/">
                             A cat photo
                             by Florian Schneider
                         </a>
@@ -663,7 +663,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/069/">
+                        <a class="blue-link" href="/photos/069/">
                             A dog photo
                             by Joseph Keil
                         </a>
@@ -671,7 +671,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/070/">
+                        <a class="blue-link" href="/photos/070/">
                             A dog photo
                             by Wade Austin Ellis
                         </a>
@@ -679,7 +679,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/071/">
+                        <a class="blue-link" href="/photos/071/">
                             A dog photo
                             by Jack Millard
                         </a>
@@ -687,7 +687,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/072/">
+                        <a class="blue-link" href="/photos/072/">
                             A cat photo
                             by Mark Sarmiento
                         </a>
@@ -695,7 +695,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/073/">
+                        <a class="blue-link" href="/photos/073/">
                             A hamster photo
                             by Melissa Keizer
                         </a>
@@ -703,7 +703,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/074/">
+                        <a class="blue-link" href="/photos/074/">
                             A rabbit photo
                             by Melissa Keizer
                         </a>
@@ -711,7 +711,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/075/">
+                        <a class="blue-link" href="/photos/075/">
                             A cat photo
                             by Fachy Marín
                         </a>
@@ -719,7 +719,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/076/">
+                        <a class="blue-link" href="/photos/076/">
                             A dog photo
                             by Yasin Hoşgör
                         </a>
@@ -727,7 +727,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/077/">
+                        <a class="blue-link" href="/photos/077/">
                             A dog photo
                             by Philipp Lansing
                         </a>
@@ -735,7 +735,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/078/">
+                        <a class="blue-link" href="/photos/078/">
                             A dog photo
                             by deanna alys
                         </a>
@@ -743,7 +743,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/079/">
+                        <a class="blue-link" href="/photos/079/">
                             A dog photo
                             by Michelle Huber
                         </a>
@@ -751,7 +751,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/080/">
+                        <a class="blue-link" href="/photos/080/">
                             A dog photo
                             by Nick Martin
                         </a>
@@ -759,7 +759,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/081/">
+                        <a class="blue-link" href="/photos/081/">
                             A cat photo
                             by Caroline Ziemkiewicz
                         </a>
@@ -767,7 +767,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/082/">
+                        <a class="blue-link" href="/photos/082/">
                             A dog photo
                             by Melissa Keizer
                         </a>
@@ -775,7 +775,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/083/">
+                        <a class="blue-link" href="/photos/083/">
                             A dog photo
                             by Fabian Gieske
                         </a>
@@ -783,7 +783,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/084/">
+                        <a class="blue-link" href="/photos/084/">
                             A dog photo
                             by Fabian Gieske
                         </a>
@@ -791,7 +791,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/085/">
+                        <a class="blue-link" href="/photos/085/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -799,7 +799,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/086/">
+                        <a class="blue-link" href="/photos/086/">
                             A cat photo
                             by Dan Wayman
                         </a>
@@ -807,7 +807,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/087/">
+                        <a class="blue-link" href="/photos/087/">
                             A cat photo
                             by Tengyart 
                         </a>
@@ -815,7 +815,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/088/">
+                        <a class="blue-link" href="/photos/088/">
                             A dog photo
                             by Sincerely Media 
                         </a>
@@ -823,7 +823,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/089/">
+                        <a class="blue-link" href="/photos/089/">
                             A dog photo
                             by Michelle Huber
                         </a>
@@ -831,7 +831,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/090/">
+                        <a class="blue-link" href="/photos/090/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -839,7 +839,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/091/">
+                        <a class="blue-link" href="/photos/091/">
                             A cat photo
                             by Agustin Fernandez
                         </a>
@@ -847,7 +847,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/092/">
+                        <a class="blue-link" href="/photos/092/">
                             A dog photo
                             by Fabian Gieske
                         </a>
@@ -855,7 +855,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/093/">
+                        <a class="blue-link" href="/photos/093/">
                             A cat photo
                             by Slavy Darozhkin
                         </a>
@@ -863,7 +863,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/094/">
+                        <a class="blue-link" href="/photos/094/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -871,7 +871,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/095/">
+                        <a class="blue-link" href="/photos/095/">
                             A dog photo
                             by Marcos Paulo Prado
                         </a>
@@ -879,7 +879,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/096/">
+                        <a class="blue-link" href="/photos/096/">
                             A dog photo
                             by FLOUFFY 
                         </a>
@@ -887,7 +887,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/097/">
+                        <a class="blue-link" href="/photos/097/">
                             A rabbit photo
                             by Sincerely Media 
                         </a>
@@ -895,7 +895,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/098/">
+                        <a class="blue-link" href="/photos/098/">
                             A dog photo
                             by Melissa Keizer
                         </a>
@@ -903,7 +903,7 @@
                 
                     <li>
                         <img src="">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind/photos/099/">
+                        <a class="blue-link" href="/photos/099/">
                             A dog photo
                             by Melissa Keizer
                         </a>
@@ -917,30 +917,30 @@
 </html>
 
         <footer class="text-xl pt-3">
-            <div class="divide-y-2 divide-black divide-solid">
+            <div class="black-divider">
                 <div></div>
                 <div></div>
             </div>
-            <div class="flex justify-center text-center items-center bg-green-300 py-3">
+            <div class="custom-footer">
                 <div class="grid grid-cols-1">
                     <p class="font-bold text-black">
                         CS 349 Project 2<br>
                     </p>
         
                     <p class="text-black">Photo Credit:
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                        <a class="blue-link" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                         Unsplash.com 
                         </a><br>
                     </p>
         
                     <p>
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">
+                        <a class="blue-link" href="https://github.com/ryan-broguiere/cpsc349-project2">
                         Github Link
                         </a><br>
                     </p>
         
                     <p>
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/license">
+                        <a class="blue-link" href="https://unsplash.com/license">
                         Copyright Policy
                         </a>
                     </p>

@@ -4,44 +4,44 @@
         <title>Cute Pet Photos</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2-tailwind/styles/tailwind.css">
+        <link rel="stylesheet" href="/tailwind.css">
     </head>
 
     <body>
-        <div class="flex flex-row-reverse justify-center items-center bg-green-300">
-            <div><b class="text-base text-4xl text-black">Cute Pet Photos</b></div>
-            <div class="px-10 py-8"><img src ="/cpsc349-project2-tailwind/logo.jpeg" alt="Cute Pet Photos"></div>
+        <div class="custom-logo">
+            <div><b class="pet-logo">Cute Pet Photos</b></div>
+            <div class="px-10 py-8"><img src ="/logo.jpeg" alt="Cute Pet Photos"></div>
         </div>
 
-        <div class="divide-y-2 divide-black divide-solid">
+        <div class="black-divider">
             <div></div>
             <div></div>
         </div>
         
         <nav>
-            <div class="bg-pink-200 py-3 text-lg">
-                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600 pl-3 pr-8" href="/cpsc349-project2-tailwind/">🏠Home</a></b>
-                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600 pr-8" href="/cpsc349-project2-tailwind/aboutUs">✌️About Us</a></b>
-                <b><a class="visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">📝Contact</a></b>
+            <div class="custom-header">
+                <b><a class="blue-link1 pl-3 pr-8" href="/">🏠Home</a></b>
+                <b><a class="blue-link1 pr-8" href="/aboutUs">✌️About Us</a></b>
+                <b><a class="blue-link1" href="https://github.com/ryan-broguiere/cpsc349-project2">📝Contact</a></b>
             </div>
             
-            <div class="divide-y-2 divide-black divide-solid">
+            <div class="black-divider">
                 <div></div>
                 <div></div>
             </div>
             <ul class="p-6">
                 <div class="flex justify-around">
-                    <div class="md:flex-grow grid grid-cols-1 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10 gap-x-8 text-xl">
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate">1-10</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/1">11-20</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/2">21-30</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/3">31-40</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/4">41-50</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/5">51-60</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/6">61-70</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/7">71-80</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/8">81-90</a></button>
-                        <button class="border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl"><a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href ="/cpsc349-project2-tailwind/paginate/9">91-100</a></button>
+                    <div class="gap-x-8 text-xl md:flex-grow grid grid-cols-1 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10">
+                        <button class="gray-button"><a class="blue-link" href ="/paginate">1-10</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/1">11-20</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/2">21-30</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/3">31-40</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/4">41-50</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/5">51-60</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/6">61-70</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/7">71-80</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/8">81-90</a></button>
+                        <button class="gray-button"><a class="blue-link" href ="/paginate/9">91-100</a></button>
                     </div>
                 </div>
             </ul>     
@@ -52,7 +52,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2-tailwind/styles/tailwind.css">
+        <link rel="stylesheet" href="/styles/tailwind.css">
     </head>
     <style>
         :root {
@@ -98,10 +98,10 @@
 
         
         <div class="flex justify-around p-4">
-        <div class="box-border h-1/4 w-1/2 border-2 p-5 ring-2 ring-black">
+        <div class="photo-info-box">
             <b><u>Photograph Information</u></b><br>
             A dog photo by Álvaro Niño.<br>
-            <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href = "https://unsplash.com/photos/e9ZJpC8P0UY">https://unsplash.com/photos/e9ZJpC8P0UY</a><br>
+            <a class="blue-link" href = "https://unsplash.com/photos/e9ZJpC8P0UY">https://unsplash.com/photos/e9ZJpC8P0UY</a><br>
             
                 Photo taken at Bogotá, Colombia.<br>
             
@@ -122,30 +122,30 @@
 </html>
 
         <footer class="text-xl pt-3">
-            <div class="divide-y-2 divide-black divide-solid">
+            <div class="black-divider">
                 <div></div>
                 <div></div>
             </div>
-            <div class="flex justify-center text-center items-center bg-green-300 py-3">
+            <div class="custom-footer">
                 <div class="grid grid-cols-1">
                     <p class="font-bold text-black">
                         CS 349 Project 2<br>
                     </p>
         
                     <p class="text-black">Photo Credit:
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                        <a class="blue-link" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                         Unsplash.com 
                         </a><br>
                     </p>
         
                     <p>
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://github.com/ryan-broguiere/cpsc349-project2">
+                        <a class="blue-link" href="https://github.com/ryan-broguiere/cpsc349-project2">
                         Github Link
                         </a><br>
                     </p>
         
                     <p>
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="https://unsplash.com/license">
+                        <a class="blue-link" href="https://unsplash.com/license">
                         Copyright Policy
                         </a>
                     </p>

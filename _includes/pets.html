@@ -6,7 +6,7 @@ layout: myheader
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{ '/cpsc349-project2-tailwind/styles/tailwind.css' | url }}">
+        <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
     </head>
     <style>
         :root {
@@ -48,10 +48,10 @@ layout: myheader
 
         {% unless page.url == '/' %}
         <div class="flex justify-around p-4">
-        <div class="box-border h-1/4 w-1/2 border-2 p-5 ring-2 ring-black">
+        <div class="photo-info-box">
             <b><u>Photograph Information</u></b><br>
             A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
-            <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href = "{{photo_url}}">{{photo_url}}</a><br>
+            <a class="blue-link" href = "{{photo_url}}">{{photo_url}}</a><br>
             {% unless photo_location_name == "" %}
                 Photo taken at {{photo_location_name}}.<br>
             {% endunless %}
@@ -68,11 +68,11 @@ layout: myheader
 
         {% if page.url == '/' %}
         <ol class="flex justify-around">
-            <ol class="flex flex-grow grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 text-center gap-y-5">
+            <ol class="flex flex-grow grid grid-cols-1 text-center gap-y-5 md:grid-cols-3 lg:grid-cols-3">
                 {% for photo in collections.photos %}
                     <li>
                         <img src="{{photo_image_url}}">
-                        <a class="visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600" href="/cpsc349-project2-tailwind{{ photo.url | url }}">
+                        <a class="blue-link" href="{{ photo.url | url }}">
                             A {{ photo.data.photo_keyword }} photo
                             by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
                         </a>

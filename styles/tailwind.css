@@ -9,4 +9,47 @@
         @apply text-white bg-blue-500
     }
 
+    .black-divider {
+        @apply divide-y-2 divide-black divide-solid
+    }
+
+    .blue-link {
+        @apply visited:text-purple-600 hover:text-pink-400 hover:underline text-blue-600
+    }
+
+    .blue-link1 {
+        @apply visited:text-purple-600 hover:text-pink-900 hover:underline text-blue-600
+    }
+
+    .custom-footer {
+        @apply flex justify-center text-center items-center bg-green-300 py-3
+    }
+
+    .custom-header {
+        @apply bg-pink-200 py-3 text-lg
+    }
+
+    .custom-logo {
+        @apply flex flex-row-reverse justify-center items-center bg-green-300
+    }
+
+    .gray-button {
+        @apply border border-black bg-gray-300 font-bold py-2 px-4 rounded-2xl
+    }
+
+    .paginate-container {
+        @apply flex justify-center items-center
+    }
+    
+    .paginate-list {
+        @apply grid grid-cols-1
+    }
+
+    .pet-logo {
+        @apply text-base text-4xl text-black
+    }
+
+    .photo-info-box {
+        @apply box-border h-1/4 w-1/2 border-2 p-5 ring-2 ring-black
+    }
 }
